@@ -108,7 +108,7 @@ class MainFragment : BaseVmFragment() {
             }
         }
         val rv = vpHome[0] as RecyclerView
-        rv.isNestedScrollingEnabled = false
+        rv.isNestedScrollingEnabled = true
     }
 
     override fun onClick() {

@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import com.zs.base_library.navigation.NavHostFragment
 import com.zs.base_library.utils.ParamUtil
+import com.zs.base_library.utils.StatusUtils
 
 /**
  * des mvvm 基础 fragment
@@ -139,8 +140,8 @@ abstract class BaseVmFragment : Fragment() {
      * 沉浸式状态
      */
     open fun setSystemInvadeBlack() {
-        //第二个参数是是否沉浸,第三个参数是状态栏字体是否为黑色。
-        //StatusUtils.setSystemStatus(mActivity, true, true)
+//        第二个参数是是否沉浸,第三个参数是状态栏字体是否为黑色。
+        StatusUtils.setSystemStatus(mActivity, true, true)
     }
 
     /**

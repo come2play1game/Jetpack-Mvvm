@@ -2,6 +2,7 @@ package com.zs.zs_jetpack
 
 import android.content.Context
 import androidx.multidex.MultiDex
+import com.didichuxing.doraemonkit.DoraemonKit
 import com.scwang.smartrefresh.header.MaterialHeader
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.api.RefreshLayout
@@ -19,6 +20,8 @@ class App: BaseApp() {
         super.onCreate()
         initSmartHead()
         MultiDex.install(this);
+        DoraemonKit.install(this, linkedMapOf(), "9b3835184c8e24d8d9f2ba98b4ca5773");
+
     }
 
     /**
